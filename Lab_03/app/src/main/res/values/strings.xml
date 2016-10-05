@@ -8,4 +8,5 @@
     <string name="login_btn">Login</string>
     <string name="user_txt">Enter Username</string>
     <string name="pass_txt">Enter Password</string>
+    <string name="welcome_text">Welcome to the CSCI4100 App. Lab 3 is about implementing a log in form using intents.</string>
 </resources>

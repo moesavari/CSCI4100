@@ -10,24 +10,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.myempire.lab_03.MainActivity">
 
+    <TextView
+        android:text="@string/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
     <Button
         android:text="@string/about_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="73dp"
         android:id="@+id/btnAbout"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="aboutOnClick (MainActivity)" />
+        android:onClick="aboutOnClick (MainActivity)"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="@string/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
         android:layout_below="@+id/btnAbout"
-        android:layout_alignRight="@+id/btnAbout"
-        android:layout_alignEnd="@+id/btnAbout"
-        android:layout_marginTop="102dp"
-        android:id="@+id/btnLogin" />
+        android:layout_alignLeft="@+id/btnAbout"
+        android:layout_alignStart="@+id/btnAbout"
+        android:layout_marginTop="41dp" />
 
 </RelativeLayout>
