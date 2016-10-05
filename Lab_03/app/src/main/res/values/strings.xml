@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab_03</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="about_text">Welcome to the third lab solution for CSCI4100, copyrighted by Randy Fortier</string>
+    <string name="finish_btn">Finish</string>
+    <string name="about_btn">About</string>
+    <string name="login_btn">Login</string>
+    <string name="user_txt">Enter Username</string>
+    <string name="pass_txt">Enter Password</string>
+</resources>
