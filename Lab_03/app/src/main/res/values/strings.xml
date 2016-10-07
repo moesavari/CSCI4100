@@ -1,12 +1,7 @@
 <resources>
     <string name="app_name">Lab_03</string>
-    <string name="title_activity_about">AboutActivity</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="about_text">Welcome to the third lab solution for CSCI4100, copyrighted by Randy Fortier</string>
-    <string name="finish_btn">Finish</string>
-    <string name="about_btn">About</string>
-    <string name="login_btn">Login</string>
-    <string name="user_txt">Enter Username</string>
-    <string name="pass_txt">Enter Password</string>
-    <string name="welcome_text">Welcome to the CSCI4100 App. Lab 3 is about implementing a log in form using intents.</string>
+    <string name="main_txt">Welcome to CSCI4100u lab 03. This lab consists of creating a log in form using intents.</string>
+    <string name="about_txt_btn">About</string>
+    <string name="login_txt_btn">Login</string>
+    <string name="about_page_txt">This is an about page meant to show the summary of CSCI4100u: Mobile Development. This course is taught by Randy Fortier.</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.myempire.lab_03;
+package com.example.myempire.edit;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.myempire.lab_03", appContext.getPackageName());
+        assertEquals("com.example.myempire.edit", appContext.getPackageName());
     }
 }

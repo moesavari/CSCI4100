@@ -1,4 +1,4 @@
-package com.example.myempire.lab_03;
+package com.example.myempire.edit;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button aboutBTN = (Button) findViewById(R.id.btnAbout);
+        Button aboutBTN = (Button) findViewById(R.id.about_btn);
         aboutBTN.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button loginBTN = (Button) findViewById(R.id.btnLogin);
+        Button loginBTN = (Button) findViewById(R.id.login_btn);
         loginBTN.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -35,5 +35,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }

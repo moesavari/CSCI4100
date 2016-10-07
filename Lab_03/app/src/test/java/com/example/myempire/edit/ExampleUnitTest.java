@@ -1,4 +1,4 @@
-package com.example.myempire.lab_03;
+package com.example.myempire.edit;
 
 import org.junit.Test;
 

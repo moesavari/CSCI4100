@@ -8,35 +8,37 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.myempire.lab_03.MainActivity">
+    tools:context="com.example.myempire.edit.MainActivity">
 
     <TextView
-        android:text="@string/welcome_text"
+        android:text="@string/main_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView4"
+        android:id="@+id/main_screen_txt"
         android:layout_marginTop="92dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
 
     <Button
-        android:text="@string/about_btn"
-        android:layout_width="wrap_content"
+        android:text="@string/about_txt_btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="73dp"
-        android:id="@+id/btnAbout"
-        android:onClick="aboutOnClick (MainActivity)"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/about_btn"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_below="@+id/main_screen_txt"
+        android:layout_marginTop="146dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:text="@string/login_btn"
-        android:layout_width="wrap_content"
+        android:text="@string/login_txt_btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnLogin"
-        android:layout_below="@+id/btnAbout"
-        android:layout_alignLeft="@+id/btnAbout"
-        android:layout_alignStart="@+id/btnAbout"
-        android:layout_marginTop="41dp" />
-
+        android:layout_below="@+id/about_btn"
+        android:layout_alignLeft="@+id/main_screen_txt"
+        android:layout_alignStart="@+id/main_screen_txt"
+        android:layout_marginTop="85dp"
+        android:id="@+id/login_btn" />
 </RelativeLayout>
