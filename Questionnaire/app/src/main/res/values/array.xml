@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="questionnaire">
+        <item>Will the midterm be hard?</item>
+        <item>Will the midterm have multiple choice questions?</item>
+        <item>Will the midterm be during class hours?</item>
+        <item>Will students be allowed to use CheatSheets?</item>
+        <item>Will students be allowed to leave after they are finished?</item>
+    </string-array>
+</resources>

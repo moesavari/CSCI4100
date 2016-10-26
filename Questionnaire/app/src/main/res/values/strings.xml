@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Questionnaire</string>
+    <string name="main_text">Welcome to the Questionnarie!</string>
+    <string name="enter_btn_txt">Enter</string>
+</resources>
