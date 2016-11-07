@@ -1,26 +1,22 @@
 package com.example.myempire.lab_06;
 
-/**
- * Created by MyEmpire on 2016-11-04.
- */
-
 public class Contact {
 
-    private long ID = -1L;
+    private String ID = null;
     private String firstName = null;
     private String lastName = null;
     private String phone = null;
 
-    public Contact(long ID, String FN, String LN, String phone){
+    public Contact(String ID, String FN, String LN, String phone){
         setID(ID);
         setFirstName(FN);
         setLastName(LN);
         setPhone(phone);
     }
 
-    public void setID(long ID) { this.ID = ID; }
+    public void setID(String ID) { this.ID = ID; }
 
-    public long getID(){ return ID; }
+    public String getID(){ return ID; }
 
     public void setFirstName(String FN){ this.firstName = FN; }
 
