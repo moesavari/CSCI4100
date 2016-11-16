@@ -70,7 +70,7 @@ public class ProductDBHelper extends SQLiteOpenHelper {
 
     public void deleteProduct(int PID){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
-        sqLiteDatabase.delete("products", "pid = ?", new String[] {""+PID});
+        sqLiteDatabase.delete("products", "pid=?", new String[] {Integer.toString(PID)});
     }
 
     public Product addNewProduct(String name, String desc, float price){
