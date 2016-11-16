@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_txt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/insert_name_edit" />
+
+    <TextView
+        android:text="@string/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc_txt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/insert_desc_edit" />
+
+    <TextView
+        android:text="@string/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_d" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/insert_price_d" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_btn"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_btn"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
