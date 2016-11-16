@@ -55,6 +55,7 @@ public class ProductDBHelper extends SQLiteOpenHelper {
 
         cursor.moveToFirst();
 
+
         while(!cursor.isAfterLast()){
             int PID = cursor.getInt(0);
             String Pname = cursor.getString(1);
@@ -65,6 +66,8 @@ public class ProductDBHelper extends SQLiteOpenHelper {
 
             cursor.moveToNext();
         }
+        cursor.close();
+
         return productResults;
     }
 

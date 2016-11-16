@@ -27,7 +27,6 @@ public class BrowseProductsActivity extends AppCompatActivity {
     private int locator;
     private Button prev;
     private Button next;
-    private Button delete;
     private ProductDBHelper prodDB;
     private ArrayList<Product> displayProducts;
 
@@ -40,14 +39,11 @@ public class BrowseProductsActivity extends AppCompatActivity {
         displayProducts = new ArrayList<>(prodDB.getAllProducts());
         locator = 0;
 
-        Product product = new Product(0, "Avocado", "Ripe and Tasty!", 6);
-        Product product1 = new Product(1, "Balogne", "Savoury meat!", 23);
-        Product product2 = new Product(2, "Knives", "Sharpest of them all, used " +
-                                                    "by Chef Ramsay himself!", 125);
-
-        displayProducts.add(product);
-        displayProducts.add(product1);
-        displayProducts.add(product2);
+        if(displayProducts.size() == 0){
+            prodDB.addNewProduct("Avocado", "Ripe and Tasty!", 6);
+            prodDB.addNewProduct("Balogne", "Savoury meat!", 23);
+            prodDB.addNewProduct("Knives", "Sharpest of them all, used by Chef Ramsay himself!", 125);
+        }
 
         showProduct(displayProducts.get(locator));
 
@@ -55,27 +51,39 @@ public class BrowseProductsActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            locator++;
-            showProduct(displayProducts.get(locator));
+                prev.setEnabled(true);
+                locator++;
+                showProduct(displayProducts.get(locator));
+                if(locator == displayProducts.size()-1){
+                    next.setEnabled(false);
+                }
+
             }
         });
 
         prev = (Button)findViewById(R.id.prev_btn);
+        prev.setEnabled(false);
         prev.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-            locator--;
-            showProduct(displayProducts.get(locator));
+                public void onClick(View view) {
+                next.setEnabled(true);
+                locator--;
+                showProduct(displayProducts.get(locator));
+                if(locator == 0){
+                    prev.setEnabled(false);
+                }
             }
         });
 
-        delete = (Button)findViewById(R.id.delete_btn);
+
+        Button delete = (Button) findViewById(R.id.delete_btn);
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            prodDB.deleteProduct(displayProducts.get(locator).getProductID());
-            locator = 0;
-            showProduct(displayProducts.get(locator));
+                prodDB.deleteProduct(displayProducts.get(locator).getProductID());
+                displayProducts = new ArrayList<>(prodDB.getAllProducts());
+                locator-=1;
+                showProduct(displayProducts.get(locator));
             }
         });
     }
