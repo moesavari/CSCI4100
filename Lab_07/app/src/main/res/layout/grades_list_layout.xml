@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/studentID_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:text="@string/sample_SID"
+        />
+
+    <TextView
+        android:id="@+id/course_component_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/studentID_layout"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:text="@string/course_component_txt"
+        />
+
+    <TextView
+        android:id="@+id/course_txt_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/studentID_layout"
+        android:layout_toRightOf="@id/course_component_layout"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/course_txt"
+        />
+
+    <TextView
+        android:id="@+id/grade_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/course_component_layout"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:text="@string/grade_txt"
+        />
+
+    <TextView
+        android:id="@+id/grade_txt_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/course_txt_layout"
+        android:layout_toRightOf="@id/grade_layout"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:text="100"
+        />
+
+</RelativeLayout>

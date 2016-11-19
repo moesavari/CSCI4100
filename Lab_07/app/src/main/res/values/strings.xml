@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab_07</string>
+    <string name="add_grade_txt">Add Grade</string>
+    <string name="delete_grade_txt">Delete Grade</string>
+    <string name="student_id_txt">Student ID:</string>
+    <string name="course_component_txt">Course Component:</string>
+    <string name="grade_txt">Grade:</string>
+    <string name="sample_SID">1000001</string>
+    <string name="course_txt">CSCI1000</string>
+    <string name="select_grade">Select Grade:</string>
+    <string name="delete_grade">Delete Grade</string>
+</resources>

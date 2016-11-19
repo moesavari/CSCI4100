@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/student_id_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_id" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/student_id_edit" />
+
+    <TextView
+        android:text="@string/course_component_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/course_component" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/course_component_edit" />
+
+    <TextView
+        android:text="@string/grade_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grade" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/grade_edit" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/add_grade_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/add_grade_act_btn" />
+    </RelativeLayout>
+
+</LinearLayout>
