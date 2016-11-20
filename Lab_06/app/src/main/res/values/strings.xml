@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Contacts</string>
-    <string name="show_txt">Show Contacts</string>
-    <string name="add_txt">Add Contact</string>
-    <string name="delete_txt">Delete Contact</string>
-</resources>
