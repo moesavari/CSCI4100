@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         contactList.add(new Contact(3, "help", "derop", "kekek"));
         contactList.add(new Contact(4, "help", "derop", "kekek"));
 
+        final Intent intent = new Intent(this, AddContact.class);
+
         contactAdapter = new ContactAdapter(this, contactList);
         listView.setAdapter(contactAdapter);
 
@@ -46,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AddContact.class);
-                startActivity(intent);
+
+                startActivityForResult(intent, PICK_CONTACT_REQUEST);
             }
         });
 
@@ -63,9 +65,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent){
+
+        super.onActivityResult(requestCode, resultCode, intent);
+
         if(requestCode == PICK_CONTACT_REQUEST){
-            if(resultCode == Activity.RESULT_OK){
-                ID = Integer.parseInt(intent.getStringExtra("contactID"));
+            if(resultCode == RESULT_OK){
+
+                ID = intent.getExtras().getInt("ContactID");
                 firstName = intent.getStringExtra("FirstName");
                 lastName = intent.getStringExtra("LastName");
                 phone = intent.getStringExtra("PhoneNumber");
