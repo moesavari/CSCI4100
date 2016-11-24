@@ -1,6 +1,7 @@
 package com.example.project;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,12 +21,16 @@ public class AddLocation extends Activity {
         addLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent intent = new Intent(AddLocation.this, MapsActivity.class);
+
                 EditText get_lat = (EditText)findViewById(R.id.insert_lat_edit);
                 latitude = Double.parseDouble(get_lat.getText().toString());
 
                 EditText get_long = (EditText)findViewById(R.id.insert_long_edit);
                 longitude = Double.parseDouble(get_long.getText().toString());
 
+                finish();
             }
         });
     }

@@ -4,4 +4,6 @@
 
     <item android:title="@string/add_location_txt"
         android:id="@+id/add_location"/>
+    <item android:title="@string/delete_location_txt"
+        android:id="@+id/delete_location"/>
 </menu>
