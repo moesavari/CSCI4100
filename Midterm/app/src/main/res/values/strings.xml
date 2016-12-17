@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Midterm</string>
+    <string name="municipality_txt">Municipality</string>
+    <string name="units_txt"># Units</string>
+    <string name="latitude_txt">Latitude:</string>
+    <string name="longitude_txt">Longitude:</string>
+</resources>

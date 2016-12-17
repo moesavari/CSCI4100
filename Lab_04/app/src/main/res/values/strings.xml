@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lab_04</string>
+    <string name="notification_title">Battery Intent</string>
+    <string name="notification_text">This is your battery level</string>
 </resources>

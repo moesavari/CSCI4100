@@ -13,17 +13,18 @@ import java.util.ArrayList;
 public class DeleteLocation extends Activity{
 
     LocationDBHelper locationDBHelper;
-    ArrayList<Integer> locationList;
+    ArrayList<String> locationList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delete_location);
+        setTitle("Delete Location");
 
         locationDBHelper = new LocationDBHelper(this);
-        locationList = new ArrayList<>(locationDBHelper.getAllLocationID());
+        locationList = new ArrayList<>(locationDBHelper.getAllLocationNames());
 
-        ArrayAdapter<Integer> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, locationList);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, locationList);
 
         final Spinner location_spinner = (Spinner)findViewById(R.id.location_spinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -33,9 +34,19 @@ public class DeleteLocation extends Activity{
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(DeleteLocation.this, MapsActivity.class);
                 locationDBHelper.deleteLocation(locationList.get(location_spinner.getSelectedItemPosition()));
+
+                finish();
                 startActivity(intent);
+            }
+        });
+        Button cancel = (Button)findViewById(R.id.cancel_btn);
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

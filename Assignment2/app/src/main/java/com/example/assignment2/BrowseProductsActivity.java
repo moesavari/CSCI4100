@@ -21,7 +21,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
-public class BrowseProductsActivity extends AppCompatActivity {
+public class  BrowseProductsActivity extends AppCompatActivity {
 
     private String bitCoinURL = "https://blockchain.info/tobtc?currency=CAD&value=";
     private int locator;
